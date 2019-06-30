@@ -22329,7 +22329,7 @@
                 return c.Address.fromString(this.client.chainId + ":" + e)
             }, t
         }(h.CrossChainUser);
-        exports.GatewayUser = M
+        e.exports.GatewayUser = M
     }, function(e, t) {}, function(e, t, r) {
         e.exports = r(261)
     }, function(e, t, r) {
