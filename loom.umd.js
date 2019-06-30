@@ -4431,7 +4431,7 @@
                     }, t.prototype.equals = function(t) {
                         return 0 === e.compare(this.bytes, t.bytes)
                     }, t.fromHexString = function(r) {
-                        if (!r.startsWith("0x")) throw new Error("hexAddr argument has no 0x prefix");
+                        if (!r.substr(0,2) == "0x") throw new Error("hexAddr argument has no 0x prefix");
                         var n = e.from(r.slice(2), "hex");
                         if (20 !== n.length) throw new Error("Invalid local address, expected 20 bytes, got " + n.length);
                         return new t(n)
